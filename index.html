@@ -7,42 +7,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculadora</title>
     <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
 </head>
 
 <body>
     <article class="calculadora">
         <section class="pantalla">
             <article class="content-resultado">
-                <input placeholder="Aqui saldra tu numero" class="resultado" type="number" readonly>
+                <input id="result" placeholder="Aqui saldra tu numero" class="resultado" type="number" readonly>
             </article>
             <section class="operaciones">
                 <section class="numeros-pantalla">
                     <section class="fila">
-                        <button class="elemento" role="button">1</button>
-                        <button class="elemento" role="button">2</button>
-                        <button class="elemento" role="button">3</button>
+                        <button onclick="putDigit(1)" class="elemento" role="button">1</button>
+                        <button onclick="putDigit(2)" class="elemento" role="button">2</button>
+                        <button onclick="putDigit(3)" class="elemento" role="button">3</button>
                         <button class="elemento" role="button">+</button>
                     </section>
 
                     <section class="fila">
-                        <button class="elemento" role="button">4</button>
-                        <button class="elemento" role="button">5</button>
-                        <button class="elemento" role="button">6</button>
+                        <button onclick="putDigit(4)" class="elemento" role="button">4</button>
+                        <button onclick="putDigit(5)" class="elemento" role="button">5</button>
+                        <button onclick="putDigit(6)" class="elemento" role="button">6</button>
                         <button class="elemento" role="button">-</button>
                     </section>
 
                     <section class="fila">
-                        <button class="elemento" role="button">7</button>
-                        <button class="elemento" role="button">8</button>
-                        <button class="elemento" role="button">9</button>
-                        <button class="elemento" role="button">x</button>
+                        <button onclick="putDigit(7)" class="elemento" role="button">7</button>
+                        <button onclick="putDigit(8)" class="elemento" role="button">8</button>
+                        <button onclick="putDigit(9)" class="elemento" role="button">9</button>
+                        <button class="elemento" role="button">0</button>
                     </section>
 
                     <section class="fila">
-                        <button class="elemento" role="button">C</button>
+                        <button onclick="reset()" class="elemento" role="button">C</button>
                         <button class="elemento" role="button">:</button>
                         <button class="elemento" role="button">=</button>
                         <button class="elemento" role="button">potencia</button>
+                        <button class="elemento" role="button">x</button>
                     </section>
 
                 </section>

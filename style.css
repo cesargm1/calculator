@@ -36,7 +36,7 @@ body {
   border: 0;
 }
 
-.content-resultado:hover{
+.content-resultado:hover {
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
@@ -48,7 +48,7 @@ body {
   height: 100%;
   text-align: center;
 }
- ::placeholder{
+::placeholder {
   color: #253455;
   font-weight: bold;
   font-size: 20px;
@@ -74,7 +74,6 @@ body {
   display: flex;
   width: 100%;
   gap: 10px;
-
 }
 .elemento {
   width: 20%;
@@ -135,7 +134,6 @@ body {
   100% {
     background-position: 0 0;
   }
-
 }
 
 .elemento:after {
