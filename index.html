@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculadora</title>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
 </head>
 
 <body>
@@ -22,34 +21,35 @@
                         <button onclick="putDigit(1)" class="elemento" role="button">1</button>
                         <button onclick="putDigit(2)" class="elemento" role="button">2</button>
                         <button onclick="putDigit(3)" class="elemento" role="button">3</button>
-                        <button class="elemento" role="button">+</button>
+                        <button onclick="add()" class="elemento" role="button">+</button>
                     </section>
 
                     <section class="fila">
                         <button onclick="putDigit(4)" class="elemento" role="button">4</button>
                         <button onclick="putDigit(5)" class="elemento" role="button">5</button>
                         <button onclick="putDigit(6)" class="elemento" role="button">6</button>
-                        <button class="elemento" role="button">-</button>
+                        <button onclick="less()" class="elemento" role="button">-</button>
                     </section>
 
                     <section class="fila">
                         <button onclick="putDigit(7)" class="elemento" role="button">7</button>
                         <button onclick="putDigit(8)" class="elemento" role="button">8</button>
                         <button onclick="putDigit(9)" class="elemento" role="button">9</button>
-                        <button class="elemento" role="button">0</button>
+                        <button onclick="putDigit(0)" class="elemento" role="button">0</button>
                     </section>
 
                     <section class="fila">
                         <button onclick="reset()" class="elemento" role="button">C</button>
-                        <button class="elemento" role="button">:</button>
-                        <button class="elemento" role="button">=</button>
-                        <button class="elemento" role="button">potencia</button>
-                        <button class="elemento" role="button">x</button>
+                        <button onclick="division()" class="elemento" role="button">:</button>
+                        <button onclick="equal()" class="elemento" role="button">=</button>
+                        <button onclick="potencia()" class="elemento" role="button">potencia</button>
+                        <button onclick="multipli()" class="elemento" role="button">x</button>
                     </section>
 
                 </section>
             </section>
     </article>
+    <script src="index.js"></script>
 </body>
 
 </html>
