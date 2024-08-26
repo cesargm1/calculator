@@ -46,6 +46,12 @@ const  potencia  =  () => {
      result.value = 0
 }
 
+const  porcentaje  =  () => {
+     acc = result.value
+     operator = '%'
+     result.value = 0
+}
+
 const equal = () => {
     if (operator === '+' ) {
      result.value = parseFloat(acc) + parseFloat(result.value)
@@ -64,6 +70,10 @@ const equal = () => {
 
     if (operator === 'potencia' ) {
      result.value = parseFloat(acc) ** parseFloat(result.value)
+    } 
+
+    if (operator === '%' ) {
+     result.value = parseFloat(acc) *100 / parseFloat(result.value)
     } 
 }
 
